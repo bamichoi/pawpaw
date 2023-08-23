@@ -5,7 +5,9 @@ export default function Home() {
 		<div className="h-full px-8 py-10">
 			<h1 className="text-2xl font-bold">Buongiorno, Bezzi!</h1>
 			<div className="mt-10 flex gap-10 rounded-lg border-4 border-orange-300 px-5 py-5">
-				<Image className="rounded-lg" src="/doggy.jpeg" alt="doggy" width={120} height={100}></Image>
+				<div className="relative h-[150px] w-[150px]">
+					<Image className="rounded-lg" src="/doggy.jpeg" alt="doggy" fill style={{objectFit: 'cover'}} />
+				</div>
 				<div className="flex flex-col gap-2">
 					<span>이름:배찌</span>
 					<span>성별:남</span>

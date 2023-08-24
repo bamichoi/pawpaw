@@ -2,7 +2,7 @@
 
 import {useRouter} from 'next/navigation';
 
-export default function Login() {
+const Login = () => {
 	const router = useRouter();
 
 	const handleJoinClick = () => router.push('/join');
@@ -26,4 +26,6 @@ export default function Login() {
 			<button onClick={handleJoinClick}>회원가입</button>
 		</div>
 	);
-}
+};
+
+export default Login;

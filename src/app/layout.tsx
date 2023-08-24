@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 	description: 'Happy Pet Walk!'
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+const RootLayout = ({children}: {children: React.ReactNode}) => {
 	return (
 		<html>
 			<body className="flex  justify-center bg-slate-400" suppressHydrationWarning={true}>
@@ -14,4 +14,6 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 			</body>
 		</html>
 	);
-}
+};
+
+export default RootLayout;

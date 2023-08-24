@@ -5,7 +5,7 @@ import {useEffect} from 'react';
 
 type RoutePath = '/home' | '/feeding';
 
-export default function Header() {
+const Header = () => {
 	const pathname = usePathname();
 
 	const setHeaderTitle = (pathname: string) => {
@@ -22,4 +22,6 @@ export default function Header() {
 			<h1 className="text-[20px]">{setHeaderTitle(pathname)}</h1>
 		</header>
 	);
-}
+};
+
+export default Header;

@@ -2,7 +2,7 @@
 
 import {useRouter} from 'next/navigation';
 
-export default function NavigationMenu() {
+const NavigationMenu = () => {
 	const router = useRouter();
 
 	const handleHomeClick = () => router.push('/home');
@@ -18,4 +18,6 @@ export default function NavigationMenu() {
 			</ul>
 		</nav>
 	);
-}
+};
+
+export default NavigationMenu;

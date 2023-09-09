@@ -1,7 +1,7 @@
 'use client';
 
 import {useRouter} from 'next/navigation';
-import requestJoinUser from '../api/users/joinUser';
+import requestJoinUser from '../api/users/join';
 import {useState} from 'react';
 import Input from '../components/input';
 
@@ -35,7 +35,7 @@ const Join = () => {
 				<Input id="email" type="email" name="이메일" value={form.email} onChange={handleInputChange} />
 				<Input id="name" type="text" name="보호자 이름" value={form.name} onChange={handleInputChange} />
 				<Input id="password" type="password" name="비밀번호" value={form.password} onChange={handleInputChange} />
-				<Input id="confirmPassword" type="password" name="이메일" value={form.confirmPassword} onChange={handleInputChange} />
+				<Input id="confirmPassword" type="password" name="비밀번호 확인" value={form.confirmPassword} onChange={handleInputChange} />
 				<button type="submit">가입</button>
 			</form>
 		</div>
